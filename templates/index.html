@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap NavBar Example</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3XipmaeQ6qFsf7Gym5+8X1e16JbPTczw1HZvAu8nb34bG7W1NJK"
+    crossorigin="anonymous"
+  >
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <a class="navbar-brand" href="#">NavBar</a>
+  
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav-collapse"
+        aria-controls="nav-collapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+  
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <form class="nav-form">
+              <input
+                class="form-control form-control-sm mr-sm-2"
+                type="text"
+                placeholder="Search"
+              >
+              <button class="btn btn-sm btn-light my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="langDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Lang
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+              <li><a class="dropdown-item" href="#">EN</a></li>
+              <li><a class="dropdown-item" href="#">ES</a></li>
+              <li><a class="dropdown-item" href="#">RU</a></li>
+              <li><a class="dropdown-item" href="#">FA</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="userDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <em>User</em>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-f3UgWTVaHlCDQzWbMTgN0syqZ8qbp25Noah1Qq3hO9v4h3JvunhL9zPtRsg0HcU1" crossorigin="anonymous"></script>
+</body>
+</html>
